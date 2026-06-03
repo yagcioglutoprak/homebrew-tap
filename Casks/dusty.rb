@@ -1,9 +1,9 @@
-# Template cask. The release workflow substitutes 1.1.0 and 68196d53ed11d5821711831ac8028fb7be86eb9b9cf0e873650370c6f97872a7
+# Template cask. The release workflow substitutes 1.2.0 and 8fff9bd291dccf93bf892bd7550bc4786c9fba4703190850d82e5f3717fd161c
 # and commits the result to yagcioglutoprak/homebrew-tap as Casks/dusty.rb,
 # so that `brew install --cask yagcioglutoprak/tap/dusty` works.
 cask "dusty" do
-  version "1.1.0"
-  sha256 "68196d53ed11d5821711831ac8028fb7be86eb9b9cf0e873650370c6f97872a7"
+  version "1.2.0"
+  sha256 "8fff9bd291dccf93bf892bd7550bc4786c9fba4703190850d82e5f3717fd161c"
 
   url "https://github.com/yagcioglutoprak/dusty/releases/download/v#{version}/Dusty-#{version}.dmg"
   name "Dusty"
