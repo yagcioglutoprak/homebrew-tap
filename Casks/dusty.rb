@@ -1,9 +1,8 @@
-# Template cask. The release workflow substitutes 1.2.0 and 8fff9bd291dccf93bf892bd7550bc4786c9fba4703190850d82e5f3717fd161c
-# and commits the result to yagcioglutoprak/homebrew-tap as Casks/dusty.rb,
-# so that `brew install --cask yagcioglutoprak/tap/dusty` works.
+# Cask for Dusty, the open menu bar disk cleaner.
+# Bumped on each release of yagcioglutoprak/dusty.
 cask "dusty" do
-  version "1.3.0"
-  sha256 "ebcac53490f09c49758d20710b100b9e436387bc9ad40011823ef4cbc716cadf"
+  version "1.5.0"
+  sha256 "2acbe24d78ecf8d560e34e62fd2d5b62b229eaee5d70c58389f5f68d08921e7f"
 
   url "https://github.com/yagcioglutoprak/dusty/releases/download/v#{version}/Dusty-#{version}.dmg"
   name "Dusty"
@@ -17,6 +16,9 @@ cask "dusty" do
   depends_on macos: ">= :ventura"
 
   app "Dusty.app"
+  # The dusty CLI ships inside the app bundle (Contents/Helpers, not MacOS:
+  # a case-insensitive filesystem would collide "dusty" with "Dusty" there).
+  binary "#{appdir}/Dusty.app/Contents/Helpers/dusty"
 
   zap trash: [
     "~/Library/Application Support/Dusty",
