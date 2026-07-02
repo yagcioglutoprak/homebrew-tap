@@ -1,8 +1,8 @@
 # Cask for Dusty, the open menu bar disk cleaner.
 # Bumped on each release of yagcioglutoprak/dusty.
 cask "dusty" do
-  version "1.5.0"
-  sha256 "2acbe24d78ecf8d560e34e62fd2d5b62b229eaee5d70c58389f5f68d08921e7f"
+  version "1.6.0"
+  sha256 "efe535b768ca19ec9c41706fc229a902a49139293921337a77d1651dce3b2f7d"
 
   url "https://github.com/yagcioglutoprak/dusty/releases/download/v#{version}/Dusty-#{version}.dmg"
   name "Dusty"
