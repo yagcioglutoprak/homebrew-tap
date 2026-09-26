@@ -1,12 +1,12 @@
-# Cask for Dusty, the open menu bar disk cleaner.
+# Cask for Dusty, the open menu bar disk and memory cleaner.
 # Bumped on each release of yagcioglutoprak/dusty.
 cask "dusty" do
-  version "2.0.1"
-  sha256 "6a74bd1da26834ad865a78728d8bca01bb343e30522a002ca874541aa14d6909"
+  version "2.1.0"
+  sha256 "4596b1c1c26232f270eb22fface2040c57d10a7dc4ffc8580e6f3dac8884ea49"
 
   url "https://github.com/yagcioglutoprak/dusty/releases/download/v#{version}/Dusty-#{version}.dmg"
   name "Dusty"
-  desc "Menu bar disk cleaner for macOS that frees space safely"
+  desc "Menu bar cleaner that safely frees disk space and memory"
   homepage "https://github.com/yagcioglutoprak/dusty"
 
   # Dusty updates itself via Sparkle, so Homebrew should not treat a self-updated
